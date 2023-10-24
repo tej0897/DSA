@@ -1,4 +1,4 @@
-package BigO;
+package BigO.WorstCase;
 
 public class BigO_n {
     public static void printNumbers(int number){

@@ -1,4 +1,4 @@
-package BigO;
+package BigO.WorstCase;
 
 public class BigO_nPow2 {
     //program for O(n^2)
