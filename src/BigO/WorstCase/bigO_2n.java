@@ -1,4 +1,4 @@
-package BigO;
+package BigO.WorstCase;
 
 public class bigO_2n {
     // we drop the constants, so the complexity will be
