@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c590dd11-f527-4ecc-ba09-ad5afc080496" name="Changes" comment="bigO commit-2">
-      <change afterPath="$PROJECT_DIR$/src/classes/Cookie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/classes/LinkedListClassStructure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/classes/main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pointers/Pointers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pointers/WithoutPointers.java" afterDir="false" />
+    <list default="true" id="c590dd11-f527-4ecc-ba09-ad5afc080496" name="Changes" comment="Classes and Pointers Update">
+      <change afterPath="$PROJECT_DIR$/src/linkedList/LinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/linkedList/main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +21,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="development" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -48,20 +45,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Pointers">
-    <configuration name="DiffTermsForInputsDropConstant" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BigO.WorstCase.DiffTermsForInputsDropConstant" />
-      <module name="DataStructuresAndAlgos" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="BigO.WorstCase.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.linkedList.main">
     <configuration name="DiffTermsForInputsDropNonDominant" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BigO.WorstCase.DiffTermsForInputsDropNonDominant" />
       <module name="DataStructuresAndAlgos" />
@@ -101,6 +85,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="linkedList.main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="linkedList.main" />
+      <module name="DataStructuresAndAlgos" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="linkedList.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="classes.main" />
       <module name="DataStructuresAndAlgos" />
@@ -116,11 +113,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.linkedList.main" />
         <item itemvalue="Application.Pointers" />
         <item itemvalue="Application.WithoutPointers" />
         <item itemvalue="Application.main" />
         <item itemvalue="Application.DiffTermsForInputsDropNonDominant" />
-        <item itemvalue="Application.DiffTermsForInputsDropConstant" />
       </list>
     </recent_temporary>
   </component>
@@ -147,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698179814451</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Classes and Pointers Update">
+      <created>1698331745616</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1698331745616</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -164,7 +168,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="bigO commit-1" />
     <MESSAGE value="bigO commit-2" />
-    <option name="LAST_COMMIT_MESSAGE" value="bigO commit-2" />
+    <MESSAGE value="Classes and Pointers Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Classes and Pointers Update" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
