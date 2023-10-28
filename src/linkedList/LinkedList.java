@@ -3,7 +3,6 @@ package linkedList;
 import java.security.PrivateKey;
 
 public class LinkedList {
-
     private Node head;
     private Node tail;
     int length;
@@ -11,7 +10,6 @@ public class LinkedList {
     class Node{
         int value;
         Node next;
-
         Node(int value){
             this.value = value;
         }
@@ -42,5 +40,16 @@ public class LinkedList {
             System.out.println(temp.value);
             temp = temp.next;
         }
+    }
+    public void append(int value){
+        Node myNode = new Node(value);
+        if (length==0){
+            head = myNode;
+            tail = myNode;
+        } else {
+            tail.next = myNode;
+            tail = myNode;
+        }
+        length ++;
     }
 }
