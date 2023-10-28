@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c590dd11-f527-4ecc-ba09-ad5afc080496" name="Changes" comment="Classes and Pointers Update">
-      <change afterPath="$PROJECT_DIR$/src/linkedList/LinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/linkedList/main.java" afterDir="false" />
+    <list default="true" id="c590dd11-f527-4ecc-ba09-ad5afc080496" name="Changes" comment="LinkedList Update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/linkedList/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linkedList/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/linkedList/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linkedList/main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698331745616</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="LinkedList Update">
+      <created>1698351002509</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1698351002509</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -169,7 +176,8 @@
     <MESSAGE value="bigO commit-1" />
     <MESSAGE value="bigO commit-2" />
     <MESSAGE value="Classes and Pointers Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Classes and Pointers Update" />
+    <MESSAGE value="LinkedList Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="LinkedList Update" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
