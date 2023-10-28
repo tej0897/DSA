@@ -41,7 +41,7 @@ public class LinkedList {
             temp = temp.next;
         }
     }
-    public void append(int value){
+    public void append(int value){  //adding to the end of list
         Node myNode = new Node(value);
         if (length==0){
             head = myNode;
@@ -52,4 +52,27 @@ public class LinkedList {
         }
         length ++;
     }
+
+    public Node removeLast(){
+        Node temp = head, pre=head;
+
+        if (length == 0){       //no elements in list scenario
+            return null;
+        }
+
+        while(temp.next != null){   //normal list scenario
+            pre = temp;
+            temp = temp.next;
+        }
+        tail = pre;
+        tail.next = null;
+        length --;
+
+        if (length == 0){       //one element in list scenario
+            head = null;
+            tail = null;
+        }
+        return temp;
+    }
+
 }
