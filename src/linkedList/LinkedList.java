@@ -114,4 +114,13 @@ public class LinkedList {
         return temp;
     }
 
+    public Boolean setNodeValueViaIndex(int index, int value){
+        Node temp = getNodeViaIndex(index);
+        if (temp != null){
+            temp.value = value;
+            return true;
+        }
+        return false;
+    }
+
 }
