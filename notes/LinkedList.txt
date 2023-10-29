@@ -1,0 +1,214 @@
+Array List vs LinkedList
+
+Both are Dynamic in length, unlike arrays which are fixed in length.
+
+1. Unlike Array List, LinkedList does not have indexes where we can go directly and access elements.
+2. LinkedList will have two pointers,
+    "Head" points the first node.
+    "Tail" points the Last node.
+    Each node points to the next node until the last node.
+    Last node also has a pointer, that points to null.
+3. Array List are contiguous in memory unlike LinkedList.
+
+ArrayList is better when:
+    1. We are removing last element.
+    2. Lookup by index.
+
+LinkedList is better when:
+    1. Adding or removing element from the beginning.
+
+************************************************************************************************************************************************
+
+LinkedList Big O:
+
+Adding an element to the end of LinkedList: O(1) -> does not matter how long the linkedList is, task is just to add an new node, make it as Tail.
+
+Removing last node: O(n) -> we have to traverse from head to last but one node, make that tail and set pointer to null. As number of nodes increases, the number of traversal increases.
+
+Adding element in the front of LinkedList: O(1) -> add element in the front, make it head.
+
+Removing element in the front: O(1) -> make head = node.next and remove first node.
+
+Adding an element in a specific node position: O(n) -> we have to traverse to that position and make changes.
+
+Removing an element from a specific node position: O(n) -> we have to traverse to that position and make changes.
+
+Search for a particular value: O(n) -> we have to traverse to that position and make changes.
+
+************************************************************************************************************************************************
+
+LinkedList - Under the hood
+
+What is a node?
+A node is comprised of two things.
+    1. Value
+    2. Pointer
+
+How do we point one node from another? We just assign it to them. Example in pointer tutorial.
+
+    node1 = {"value" = 1, "next" = node2}
+    node2 = {"value" = 2, "next" = null}
+
+The above example has two nodes in linkedList: 1 -> 2
+
+for 4 nodes LinkedList:
+
+    head = {"value" = 1, "next" = {"value" = 2, "next" = {"value" = 3, "next" = {"value" = 4, "next" = null}
+    tail -> {"value" = 4, "next" = null}
+
+    1 -> 2 -> 3 -> 4
+
+************************************************************************************************************************************************
+
+LinkedList: Constructor
+
+
+Constructor has something in common with 3 other methods.
+    LinkedList(int value)               -> creates a new node
+    1. append(int value)                -> creates a new node and adds it to the end
+    2. prepend(int value)               -> creates a new node and adds it in the beginning
+    3. insert(int index, int value)     -> creates a new node and adds it at a particular index
+
+Since these 4 methods have creating a new node in common, create a new class names "node"
+So whenever we want to create a new node, we call this class to create it.
+
+See code Example to see how to write a node class.
+
+************************************************************************************************************************************************
+
+LinkedList printing List:
+
+point head to temp.
+while temp != null, print temp.value, temp = temp.next
+
+while condition fails when the node becomes tail.
+
+************************************************************************************************************************************************
+
+LinkedList : Append
+
+Two Scenarios.
+    1. Normal addition
+    2. Adding node when the list is empty.
+    3. increase length.
+
+To check if the list is empty or not, just use the condition: "if(length == 0)"
+
+Adding a node normally:
+    1. Make the last node pointing towards new node (instead of null)
+    2. Point tail to the newly added node.
+    3. increase length.
+
+Adding a node to an empty list:
+    1. Point head and tail to the new node.
+
+
+************************************************************************************************************************************************
+
+LinkedList: RemoveLast
+
+Three Scenarios:
+
+    1. Removing last element in a normal list.
+    2. Removing last element from a list with one element.
+    3. Removing last element from an empty list.
+
+Scenario one: Removing a node from normal list.
+
+    1. Iterate from head to tail to get second last node.
+
+    2. Start iteration with two variables.
+        variable 1: temp
+        variable 2: pre
+
+        temp and pre will be set to head at first. Idea is, temp will be one node ahead of pre to see if node.next is null.
+        if it is null, then node that pre is pointing will be set as tail, tail.next will be set to null.
+
+        set temp to the last node that we removed and return it.
+
+Scenario two: Removing a node from empty list.
+
+    1. If length / head / tail is 0, then return null.
+
+Scenario three: Removing a node from list with single node.
+
+    1. after we decrement the length of the list, if the length of the list is 0, then set head and tail to 0.
+
+
+When we are removing an element from a null list and try to print it using mylist.value, we'll get null-pointer exception.
+
+************************************************************************************************************************************************
+
+LinkedList : Prepend
+
+Prepend means adding a new node in the beginning of the list.
+
+There are two Scenarios to handle here.
+
+    1. Prepend to a normal List.
+    2. Prepend to an empty List.
+
+Case 1: If the list is empty (check using length of the linkedList), then make head and tail point to the newNode and increment length by 1.
+Case 2: Else, make newNode.next = head, head = newNode and increment length by 1.
+
+************************************************************************************************************************************************
+
+LinkedList : Remove First
+
+Task is to remove the first item in the linkedList.
+
+Different Scenarios:
+    1. Normal list.
+    2. With single Node list.
+    3. With empty list.
+
+Step 1: Check if length is 0, if yes then return null
+Step 2: Assign temp to head, point head to head.next, temp.next to null(to remove the first node) and decrement the length of the List.
+Step 3: If the length is 0 post decrement, then make tail = null and return temp.
+
+************************************************************************************************************************************************
+
+LinkedList : Get Method (to get the node at the specified Index)
+
+Simple Steps:
+
+1. If the index is less than 0 or greater than length, then return null.
+2. Set temp to head and use for loop for iterating till the index. When it reaches, break out and return the node.
+
+************************************************************************************************************************************************
+
+LinkedList: set Method( set's a value at the specified index and returns Boolean if the operation was success or not)
+
+Step 1: make use of get method to traverse and go to the index.
+Step 2: if the value is not null, then change the value and return True. Else return false.
+
+************************************************************************************************************************************************
+
+LinkedList: Insert (insert a new node at a particular index and return Boolean)
+
+ Step 1: Check if the index is greater then length or less than 0. If yes, then return false.
+ Step 2: Check if index is 0, if yes, then use prepend method and insert the node in the beginning. return true.
+ Step 3: Check if index = length, if yes, then use append method and insert the node. return true.
+ Step 4: Create a new node and temp variable of type node. point temp variable to getValueByIndex(index-1). set newNode to temp.next, temp.next=newNode and return true.
+ step 5: outside loop, increment length by 1.
+
+************************************************************************************************************************************************
+
+LinkedList: Remove (remove a particular node at the given index)
+
+Step 1: Check if the index is greater then length or less than 0. If yes, then return null.
+Step 2: Check if index is 0, if yes, then use removeFirst method and remove the node in the beginning.
+Step 3: Check if index = length, if yes, then use removeLast method and remove the node.
+Step 4:
+    a. create prev and temp. temp will point at the node that is being removed. prev will point at the temp-1
+    b. prev.next = temp.next
+    c. temp.next = null
+    d. decrement length and return temp.
+
+
+
+
+
+
+
+

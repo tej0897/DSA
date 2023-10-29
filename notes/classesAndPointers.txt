@@ -1,0 +1,60 @@
+What is a class?
+
+Class is like a cookie maker. It is used to make cookies of different types and colors.
+
+We can make different types of cookies from cookie class. All we need is the following things.
+
+    1. Cookie class
+    2. Attributes like color, density
+    3. Constructors
+    4. Getters and Setters
+
+Example: Cookie Program
+
+Let's say for a Data Structure like Linked List:
+
+We need a constructor to create a Linked List
+We need methods like append(), removeLast(), prepend(), insert(), remove()
+
+Example: LinkedListClassStructure
+
+************************************************************************************************************************************************
+
+Pointers:
+
+Explanation with an example:
+
+int num1 = 11;      -> num1 = 11
+int num2 = num1;    -> num2 = 11
+
+num1 = 22           -> num1 = 22, num2 = 11
+
+So, we are assigning num2 = num1, the value for num2 will be num1's value at the time of initialization.
+    Later when we change the value of num1, it will not reflect for num2.
+
+This is how things work when we are not working with Pointers.
+
+Example: WithoutPointers
+
+*************************************
+
+Working With Pointers:
+
+We have a hashMap and set the value to 11.
+
+map1 = { "value" = 11 }
+map2 = map1
+
+in this scenario, map2 and map1 both will point at the value 11.
+So when the value changes, it'll reflect for both map1 and map2.
+
+We can redirect map2 to another map, let's say map3 and it work function the same.
+
+We can do the same for map1. Make map1 point to map3.
+Now all 3 maps are pointing towards map3 value and none are pointing towards map1's value.
+
+Since no one is pointing towards the old value, the value will be cleared by Java on it's own via process called "Garbage Collection".
+
+
+************************************************************************************************************************************************
+************************************************************************************************************************************************
