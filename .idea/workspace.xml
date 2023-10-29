@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c590dd11-f527-4ecc-ba09-ad5afc080496" name="Changes" comment="LinkedList Update-3 notes.txt">
-      <change afterPath="$PROJECT_DIR$/notes/Big O.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes/LinkedList.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes/classesAndPointers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/LinkedList.txt" beforeDir="false" afterPath="$PROJECT_DIR$/notes/LinkedList.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +43,11 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\OneDrive\Desktop\interviewPrep_2.0\DSA\DataStructuresAndAlgos\notes" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.linkedList.main">
     <configuration name="DiffTermsForInputsDropNonDominant" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BigO.WorstCase.DiffTermsForInputsDropNonDominant" />
@@ -221,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698598662881</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="LinkedList Update-3 notes.txt">
+      <created>1698598717262</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1698598717262</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
