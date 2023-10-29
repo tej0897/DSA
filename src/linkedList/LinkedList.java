@@ -54,7 +54,8 @@ public class LinkedList {
     }
 
     public Node removeLast(){
-        Node temp = head, pre=head;
+        Node temp = head;
+        Node pre=head;
 
         if (length == 0){       //no elements in list scenario
             return null;
@@ -73,6 +74,19 @@ public class LinkedList {
             tail = null;
         }
         return temp;
+    }
+
+    public void prepend(int value){
+        Node newNode = new Node(value);
+
+        if (length==0){
+            head = newNode;
+            tail = newNode;
+        } else {
+            newNode.next = head;
+            head = newNode;
+        }
+        length++;
     }
 
 }
