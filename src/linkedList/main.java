@@ -24,7 +24,8 @@ public class main {
 
 //        myLinkedList.insert(4, 5);
 
-        myLinkedList.remove(2);
+//        myLinkedList.remove(2);
+        myLinkedList.reverse();
         myLinkedList.printLinkedList();
     }
 }

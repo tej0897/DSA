@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c590dd11-f527-4ecc-ba09-ad5afc080496" name="Changes" comment="LinkedList Update-3 insert()">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c590dd11-f527-4ecc-ba09-ad5afc080496" name="Changes" comment="LinkedList Update-3 remove()">
       <change beforePath="$PROJECT_DIR$/src/linkedList/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linkedList/LinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/linkedList/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linkedList/main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698594544667</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="LinkedList Update-3 remove()">
+      <created>1698597388097</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1698597388098</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -225,7 +230,8 @@
     <MESSAGE value="LinkedList Update-3 get()" />
     <MESSAGE value="LinkedList Update-3 set()" />
     <MESSAGE value="LinkedList Update-3 insert()" />
-    <option name="LAST_COMMIT_MESSAGE" value="LinkedList Update-3 insert()" />
+    <MESSAGE value="LinkedList Update-3 remove()" />
+    <option name="LAST_COMMIT_MESSAGE" value="LinkedList Update-3 remove()" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
