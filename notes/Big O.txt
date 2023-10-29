@@ -1,0 +1,152 @@
+What is Big O?
+
+When there are two codes that perform the same task, Big O is used to determine which code is better.
+It compares code 1 and code 2 mathematically and finds out how efficient they run.
+
+    1. Time Complexity:
+        Finds out how long each code takes to run.
+        Time complexity will not use time to measure the efficiency of the code. (Different computers will give different time results.)
+        It calculates based on "number of operations it takes to complete something."
+
+    2. Space Complexity:
+        Measuring how much the code occupies memory.
+
+
+************************************************************************************************************************************************
+
+Different symbols used in Big O:
+
+    1. Ω (Omega) - Best case scenario
+    2. θ (theta) - Average case
+    3. O (Omicron) - Worst case scenario
+
+************************************************************************************************************************************************
+
+O(n)
+
+if there are "n" numbers given and the number of operations is "n".
+    Example: printing all numbers from 0 to n. (n being variable)
+
+************************************************************************************************************************************************
+
+Drop Constants:
+
+Rule for simplifying the notations:
+    If we are running two "for" loops for printing numbers from 0 to 10, i.e.
+        for(int i=0;i<n;i++) and for(int j=0;j<n;j++). then the complexity will be O(2n) => (n + n)
+
+        But, rule is to drop Constants, so drop 2 from the notation. It becomes O(n)
+
+************************************************************************************************************************************************
+
+O(n^2):
+
+If we put one "for" loop inside another "for" loop, we achieve this complexity.
+    Example: BigO_nPow2
+
+************************************************************************************************************************************************
+
+Drop non-Dominants:
+
+We have to set of looping.
+    1. For loop from O(n^2) - (for loop inside for loop)
+    2. For loop
+
+When we run this scenario, the number of operations is O(n^2) + O(n).
+
+   i.e. O(n^2 + n) -> n^2 is dominant, so drop "n" => O(n^2)
+
+   Example: BigO_nPow2PlusN
+
+
+************************************************************************************************************************************************
+
+O(1):
+
+The most efficient BigO.
+
+Example: When we have a scenario where we just add two numbers, we achieve this complexity.
+
+    It does not matter how large the number is. The number of operations in just 1.
+    Therefore, when the number grows, the number of operations does not increase.
+
+    O(1) does not mean there will be just one operation. when the task is to do n + n + n, the number of operations is 2 => O(2)
+    But we simplify this and keep it O(1).
+
+************************************************************************************************************************************************
+
+O(log n):
+
+We have a sorted array. [1,2,3,4,5,6,7,8]
+Task is to find a particular value from this array. [1]
+
+Working:
+    1. Divide the array into two and see if the number is in left or right.
+    2. number is in left, so discard right side. -> after discarding [1,2,3,4]
+    3. perform step 1 again.
+    4. number is in left, so discard right side. -> after discarding [1,2]
+    5. perform step 1 again. -> found the number
+
+
+We took 3 steps to find the number in the list of 8 numbers. i.e. -> 2^3 -> 8 => log2 8 = 3.
+
+Example: log2 1,073,741,824 = 31        where 1,073,741,824 is number of elements and 31 is the number of operations.
+
+It is the next best thing after O(1).
+
+************************************************************************************************************************************************
+
+Different Terms For Inputs:
+
+in above examples, we dropped constants and non-Dominants. We cannot simply do this on all scenarios.
+This is valid when the number of arguments passed in is just 1.
+
+see example: DiffTermsForInputs program for more details.
+
+We are passing two arguments, a and b. under this scenario, we cannot just drop non-Dominants or constants.
+
+The complexity will be O(a+b) or O(a*b) -> cause the values of a and b can change. (a=1, b=12132121)
+
+************************************************************************************************************************************************
+
+ArrayLists: (It is dynamic and allows us to add new elements unlike arrays, which has fixed length.)
+
+list = [11, 3, 23, 7]
+
+when we perform list.add(17);       => [11, 3, 23, 7, 17]
+when we perform list.remove(4)      => [11, 3, 23, 7]       (4 being index of element)
+
+When we do this, there is no rearranging of list items. One operation to add, one operation to remove.
+
+O(1)
+
+************
+
+When we do the following operation, the complexity changes.
+
+list.remove(0)      -> this removes the element at index 0 and all the other number's index has to be moved.
+list.add(0, 17)     -> this adds new element 17 at index 0 and has to move all other elements.
+
+So the complexity for this operation is O(n)
+
+************
+
+This is also same for looking for an element by value. O(n)
+If we are looking for an element by index, then it is O(1)
+
+************************************************************************************************************************************************
+
+Wrap Up:
+
+O(1)        -> Constant
+O(log n)    -> divide and conquer
+O(n)        -> proportional
+O(n^2)      -> loop within a loop
+
+
+************************************************************************************************************************************************
+************************************************************************************************************************************************
+
+
+Git Link: https://github.com/tej0897/DSA/tree/master/src/BigO
+
