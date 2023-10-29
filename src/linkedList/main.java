@@ -18,7 +18,9 @@ public class main {
 //        System.out.println("Removed Item is: "+myLinkedList.removeFirst());
         // null, if we give removeFirst().value, it'll throw NullPointerException
 
-        System.out.println("Value of index 0 is: "+myLinkedList.getNodeViaIndex(0).value);
+//        System.out.println("Value of index 0 is: "+myLinkedList.getNodeViaIndex(0).value);
+
+        System.out.println(myLinkedList.setNodeValueViaIndex(0, 111));
         myLinkedList.printLinkedList();
     }
 }
