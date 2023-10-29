@@ -89,4 +89,18 @@ public class LinkedList {
         length++;
     }
 
+    public Node removeFirst(){
+        if (length ==0){
+            return null;    //empty scenario
+        }
+        Node temp = head;
+        head = head.next;   //normal scenario
+        temp.next = null;
+        length--;
+        if (length ==0){
+            tail = null;    //one node scenario
+        }
+        return temp;
+    }
+
 }
