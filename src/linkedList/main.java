@@ -22,7 +22,9 @@ public class main {
 
 //        System.out.println(myLinkedList.setNodeValueViaIndex(0, 111));
 
-        myLinkedList.insert(4, 5);
+//        myLinkedList.insert(4, 5);
+
+        myLinkedList.remove(2);
         myLinkedList.printLinkedList();
     }
 }
