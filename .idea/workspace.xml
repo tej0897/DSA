@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c590dd11-f527-4ecc-ba09-ad5afc080496" name="Changes" comment="LinkedList Update-3 Prepend">
+    <list default="true" id="c590dd11-f527-4ecc-ba09-ad5afc080496" name="Changes" comment="LinkedList Update-3 RemoveFirst">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/linkedList/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linkedList/LinkedList.java" afterDir="false" />
     </list>
@@ -171,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698590563082</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="LinkedList Update-3 RemoveFirst">
+      <created>1698591927031</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1698591927031</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -192,7 +199,8 @@
     <MESSAGE value="LinkedList Update" />
     <MESSAGE value="LinkedList Update-2 Append" />
     <MESSAGE value="LinkedList Update-3 Prepend" />
-    <option name="LAST_COMMIT_MESSAGE" value="LinkedList Update-3 Prepend" />
+    <MESSAGE value="LinkedList Update-3 RemoveFirst" />
+    <option name="LAST_COMMIT_MESSAGE" value="LinkedList Update-3 RemoveFirst" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
